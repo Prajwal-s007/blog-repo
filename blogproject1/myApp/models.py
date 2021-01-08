@@ -36,4 +36,4 @@ class Comment(models.Model):
     class Meta:
         ordering=('created',)
     def __str__(self):
-        return 'Commented by {0} on {}'.format(self.name,self.post)
+        return 'Commented by {} on {}'.format(self.name,self.post)
